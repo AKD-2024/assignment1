@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #444746;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#email {
+  border: 1px solid #444746;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  height: 1.7rem;
+  margin: 1.4rem auto 0.7rem auto;
+  padding: 0.8rem 1rem;
+  width: 90%;
+}
+
+#content {
+  font-size: 0.875rem;
+  letter-spacing: 0rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+a {
+  color: #0b57d0;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.main__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+button {
+  border: none;
+  background-color: #0b57d0;
+  border-radius: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  width: 5.3rem;
+}
+
+footer {
+  color: #444746;
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+
+.main__bottom a {
+  align-self: center;
+}
+
+select {
+  border: none;
+  color: #444746;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  list-style: none;
+}
+
+input:focus {
+  border-color: #0b57d0;
+  box-shadow: 0 0 5px #0b57d0;
+  outline: none;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #f0f4f9;
+  }
+
+  .container {
+    height: max-content;
+    margin: 7.5% auto;
+    width: 73%;
+  }
+
+  .main {
+    background-color: #fff;
+    border-radius: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+
+  .inner__main {
+    width: 50%;
+  }
+
+  footer {
+    margin-top: 1rem;
+    width: 98%;
+  }
+
+  select {
+    background-color: transparent;
+  }
+
+  .main__bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+}
