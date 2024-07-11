@@ -1,0 +1,278 @@
+.btn {
+  border: none;
+  background-color: #0b57d0;
+  border-radius: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  width: 5.3rem;
+}
+
+.container {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.content {
+  font-size: 0.875rem;
+  letter-spacing: 0rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+.email-phone {
+  border: 1px solid #444746;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  height: 1.7rem;
+  margin: 1.4rem auto 0.7rem auto;
+  padding: 0.8rem 1rem;
+  width: 90%;
+}
+
+.email-phone:focus {
+  border-color: #0b57d0;
+  box-shadow: 0 0 5px #0b57d0;
+  outline: none;
+}
+
+.footer {
+  color: #444746;
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.footer__select-menu {
+  border: none;
+  color: #444746;
+  cursor: pointer;
+  display: flex;
+  padding: 0 .5rem;
+}
+
+.footer__select-menu select {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer__select-menu:hover,
+.ulist li:hover {
+  background-color: #e1e6ea;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.header1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.image {
+  height: 3rem;
+  width: 3rem;
+}
+
+.link {
+  color: #0b57d0;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+.main__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.main__bottom .link {
+  align-self: center;
+}
+
+.para {
+  color: #444746;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ulist {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.ulist li {
+  padding: .5rem;
+}
+
+@media screen and (min-width: 550px) {
+  .body {
+    background-color: #f0f4f9;
+  }
+
+  .container {
+    height: max-content;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 73%;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    width: 98%;
+  }
+
+  .form {
+    margin-top: 4rem;
+  }
+
+  .inner__main {
+    width: 50%;
+  }
+
+  .main {
+    background-color: #fff;
+    border-radius: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .main__bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+
+  .select {
+    background-color: transparent;
+  }
+}
+
+@media (343px < width < 391px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .footer__select-menu {
+    padding-left: 1rem;
+  }
+
+  .footer__select-menu select {
+    color: #444746;
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+  }
+
+  .ulist {
+    padding-left: .75rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (width=412px) {
+  .footer__select-menu .select {
+    font-size: .75rem;
+  }
+
+  .ulist {
+    gap: 1rem;
+  }
+}
+
+@media (767px < width < 1025px) {
+  .container {
+    min-height: 528px;
+    width: 480px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    margin: 0.5rem auto;
+  }
+
+  .form {
+    margin-top: 0;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main__bottom {
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+}
+
+@media (width=540px)
+{
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer{
+    width: 98%;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .container{
+    min-height: auto;
+    width: 74%;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form{
+    margin-top: 4rem;
+    width: 50%;
+  }
+
+  .main{
+    flex-direction: row;  
+  }
+
+  .main__bottom{
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+
+  .footer__select-menu select
+  {
+    font-size: .75rem;
+  }
+}
